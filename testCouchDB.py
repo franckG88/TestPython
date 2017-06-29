@@ -47,6 +47,7 @@ idToDelete = 0
 while idToDelete not in libId.keys():
     idToDelete = input("Do you want to delete a record (Give me the number): ")
 
+# TODO: Rajouter tests
 try:
     doc = db.get(libId[idToDelete])
     db.delete(doc)
