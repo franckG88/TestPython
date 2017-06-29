@@ -16,5 +16,9 @@ def albums():
 def albums():
     return "Liste des artistes:"
 
+@app.route('/concerts')
+def albums():
+    return "Concerts à venir:"
+
 if __name__ == '__main__':
     app.run(debug=True)
